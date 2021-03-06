@@ -1,0 +1,3 @@
+% zsh
+# Reload zsh autocompletions. zcompdump
+rm ~/{.zcompdump,.zcompdump_custom} && zsh -c compinit
