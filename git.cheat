@@ -2,5 +2,5 @@
 
 # Bring a Github fork up to date
 git fetch origin
-git checkout master
-git merge origin/master
+git checkout main
+git rebase origin/main

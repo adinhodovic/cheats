@@ -1,0 +1,13 @@
+% pg, postgres
+
+# Dump a postgres database into a single tarfile
+pg_dump dbname -U <username> -h <host> -Ft --no-privileges > <file>
+$ file: echo ./db_dump.tar --- --fzf-overrides '--no-select-1'
+
+# Restore a postgres database
+pg_restore -d <database> -h <host> -U <username> --disable-triggers --no-privileges <file>
+$ file: echo ./db_dump.tar --- --fzf-overrides '--no-select-1'
+
+# Watch the progress of a Postgres dump
+watch -n 0.3 du -sh <file>
+$ file: echo ./db_dump.tar --- --fzf-overrides '--no-select-1'
