@@ -1,7 +1,7 @@
 % pg, postgres
 
 # Dump a postgres database into a single tarfile
-pg_dump dbname -U <username> -h <host> -Ft --no-privileges > <file>
+pg_dump <dbname> -U <username> -h <host> -Ft --no-privileges > <file>
 $ file: echo ./db_dump.tar --- --fzf-overrides '--no-select-1'
 
 # Restore a postgres database

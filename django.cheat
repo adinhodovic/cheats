@@ -2,6 +2,11 @@
 
 $ app: ./manage.py list_apps
 
+# Create test superuser
+./manage.py createsuperuser --username <test_username> --email <email>
+$ test_username: echo django --- --fzf-overrides '--no-select-1'
+$ email: echo django@test.com --- --fzf-overrides '--no-select-1'
+
 # Change users password
 ./manage.py changepassword <username>
 $ username: ./manage.py list_users
